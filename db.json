@@ -1,64 +1,101 @@
 {
-	"products": [
-		{
-			"id": 1,
-			"title": "Product A",
-			"price": 220,
-			"description": "This is product A",
-			"thumbnail": "https://picsum.photos/200/300.webp",
-			"stock": 100,
-			"categoryId": 1
-		},
-		{
-			"id": 2,
-			"title": "Product B",
-			"price": 180,
-			"description": "This is product B",
-			"thumbnail": "https://picsum.photos/200/300.webp",
-			"stock": 100,
-			"categoryId": 1
-		},
-		{
-			"id": 3,
-			"title": "Product C",
-			"price": 120,
-			"description": "This is product C",
-			"thumbnail": "https://picsum.photos/200/300.webp",
-			"stock": 100,
-			"categoryId": 2
-		},
-		{
-			"id": 4,
-			"title": "Product D",
-			"price": 150,
-			"description": "This is product D",
-			"thumbnail": "https://picsum.photos/200/300.webp",
-			"stock": 100,
-			"categoryId": 2
-		},
-		{
-			"id": 5,
-			"title": "Product E",
-			"price": 200,
-			"description": "This is product E",
-			"thumbnail": "https://picsum.photos/200/300.webp",
-			"stock": 100,
-			"categoryId": 3
-		},
-		{
-			"id": 6,
-			"title": "Product F",
-			"price": 250,
-			"description": "This is product F",
-			"thumbnail": "https://picsum.photos/200/300.webp",
-			"stock": 100,
-			"categoryId": 3
-		}
-	],
-	"categories": [
-		{ "id": 1, "name": "Technology", "slug": "technology" },
-		{ "id": 2, "name": "Clothing", "slug": "clothing" },
-		{ "id": 3, "name": "Others", "slug": "others" }
-	],
-	"users": []
+  "products": [
+    {
+      "id": 1,
+      "title": "Product A",
+      "price": 220,
+      "description": "This is product A",
+      "thumbnail": "https://picsum.photos/200/300.webp",
+      "stock": 100,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Product B",
+      "price": 180,
+      "description": "This is product B",
+      "thumbnail": "https://picsum.photos/200/300.webp",
+      "stock": 100,
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "title": "Product C",
+      "price": 120,
+      "description": "This is product C",
+      "thumbnail": "https://picsum.photos/200/300.webp",
+      "stock": 100,
+      "categoryId": 2
+    },
+    {
+      "id": 4,
+      "title": "Product D",
+      "price": 150,
+      "description": "This is product D",
+      "thumbnail": "https://picsum.photos/200/300.webp",
+      "stock": 100,
+      "categoryId": 2
+    },
+    {
+      "id": 5,
+      "title": "Product E",
+      "price": 200,
+      "description": "This is product E",
+      "thumbnail": "https://picsum.photos/200/300.webp",
+      "stock": 100,
+      "categoryId": 3
+    },
+    {
+      "id": 6,
+      "title": "Product F",
+      "price": 250,
+      "description": "This is product F",
+      "thumbnail": "https://picsum.photos/200/300.webp",
+      "stock": 100,
+      "categoryId": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Technology",
+      "slug": "technology"
+    },
+    {
+      "id": 2,
+      "name": "Clothing",
+      "slug": "clothing"
+    },
+    {
+      "id": 3,
+      "name": "Others",
+      "slug": "others"
+    }
+  ],
+  "users": [
+    {
+      "email": "dung@gmail.com",
+      "password": "$2a$10$UrR5ool.mm61AVXJr2NUuOIfE6PhLYeMZb74IB8tA2ZUZZDsxqt2y",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "email": "dung2@gmail.com",
+      "password": "$2a$10$nTHU29./X4ypTIBkQ5BZzOFb0yqLQZ3o5EG7K670L7GSG39cKh0Ii",
+      "confirmPassword": "123455",
+      "id": 2
+    },
+    {
+      "email": "dung3@gmail.com",
+      "password": "$2a$10$HkJWJ7dxx6WGZvs2nBj/e.2vzh/V.5xPtCn27YknXZzAbE19NrfUW",
+      "confirmPassword": "111111",
+      "id": 3
+    },
+    {
+      "email": "dung5@gmail.com",
+      "password": "$2a$10$jDsZ6vy6L0xX6ConsR2dbu91.NBTVyneyO0DlPPAqPBHD/cEYW8.2",
+      "confirmPassword": "123456",
+      "id": 4
+    }
+  ]
 }

@@ -1,13 +1,6 @@
 {
   "products": [
     {
-      "title": "Product A",
-      "price": 220,
-      "description": "This is product A",
-      "stock": 101,
-      "id": 1
-    },
-    {
       "id": 2,
       "title": "Product B",
       "price": 180,
@@ -51,13 +44,6 @@
       "thumbnail": "https://picsum.photos/200/300.webp",
       "stock": 100,
       "categoryId": 3
-    },
-    {
-      "title": "product 7 update",
-      "price": 100,
-      "description": "desc 7",
-      "stock": 101,
-      "id": 7
     }
   ],
   "categories": [
@@ -102,6 +88,13 @@
       "confirmPassword": "123456",
       "role": "admin",
       "id": 4
+    },
+    {
+      "email": "dung1@gmail.com",
+      "password": "$2a$10$jQZWioCwzQqDK5ISCAinUOcP2a5M.iThPodhTbqMmVaeB6KzCQmgC",
+      "confirmPassword": "123456",
+      "role": "admin",
+      "id": 5
     }
   ]
 }

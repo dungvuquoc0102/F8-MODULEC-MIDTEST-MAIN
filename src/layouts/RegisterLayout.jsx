@@ -27,7 +27,7 @@ const RegisterLayout = () => {
   }
   return (
     <div className="mx-auto w-[500px]">
-      <h1>Register Account</h1>
+      <h1 className="text-center text-2xl mt-3">Register Account</h1>
       <form onSubmit={handleSubmit(handleRegister)}>
         <div className="flex flex-col gap-2">
           <label htmlFor="email">Email</label>
@@ -63,7 +63,19 @@ const RegisterLayout = () => {
               {errors.confirmPassword.message}
             </span>
           )}
-          <button className="p-2 bg-blue-500 rounded-md">Register</button>
+        </div>
+        <div className="flex flex-col gap-2">
+          <label htmlFor="role">Role</label>
+          <select className="border rounded-md p-1" {...register("role")}>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+          </select>
+          {errors.role && (
+            <span className="text-red-500">{errors.role.message}</span>
+          )}
+        </div>
+        <div>
+          <button className="p-2 bg-blue-500 rounded-md mt-3">Register</button>
         </div>
       </form>
     </div>

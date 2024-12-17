@@ -1,7 +1,20 @@
-import React from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 
 const HomeLayout = () => {
+  const nav = useNavigate();
+  const [user, setUser] = useState({});
+  useEffect(() => {
+    const localUser = JSON.parse(localStorage.getItem("user")) || {};
+    setUser(localUser);
+  }, []);
+  function handleLogout() {
+    if (confirm("Logout?")) {
+      localStorage.setItem("user", "{}");
+      setUser({});
+      nav("/");
+    }
+  }
   return (
     <>
       <header className="border-b p-2 container mx-auto flex justify-between items-center">
@@ -18,6 +31,17 @@ const HomeLayout = () => {
             </li>
           </ul>
         </nav>
+        {user.email && (
+          <div>
+            <span>Hello {user.email?.split("@")[0]}</span>
+            <button
+              className="p-2 bg-gray-500 rounded-md ml-2"
+              onClick={handleLogout}
+            >
+              Logout
+            </button>
+          </div>
+        )}
       </header>
       <Outlet />
     </>

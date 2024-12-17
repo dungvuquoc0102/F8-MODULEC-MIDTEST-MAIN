@@ -11,15 +11,19 @@ const HomePage = () => {
     })();
   }, []);
   return (
-    <div className="grid grid-cols-5 gap-3">
-      {state.products.map((item) => (
-        <div key={item.id}>
-          <img src={item.thumbnail} alt="img" />
-          <div>{item.title}</div>
-          <div>{item.price}</div>
-          <button className="bg-green-500 p-2 rounded-md">Show detail</button>
-        </div>
-      ))}
+    <div className="container mx-auto py-3">
+      {/* function */}
+      <div></div>
+      <div className="grid grid-cols-5 gap-3">
+        {state.products.map((item) => (
+          <div key={item.id}>
+            <img src={item.thumbnail} alt="img" />
+            <div>{item.title}</div>
+            <div>{item.price}</div>
+            <button className="bg-green-500 p-2 rounded-md">Show detail</button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
